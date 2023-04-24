@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Joaquin Rivas",
+        "role": "Web Dev",
+        "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "univ": "UCI"
+    },
+    {
+        "name": "Naylin Brizuela",
+        "role": "Designer, UI/UX",
+        "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "univ": "UCI"
+    },
+    {
+        "name": "Juan Diego",
+        "role": "3d Artist",
+        "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "univ": "UCI"
+    }
+]
