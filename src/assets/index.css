@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#home {
+    background-image: url("/src/assets/bg/home.png");
+    /* background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=#1f1f1fff&noise=626262&density=57&opacity=16); */
+}
+
+#monopolies {
+    background-image: url("/src/assets/bg/monopolies.svg");
+}
+
+#company {
+    background-image: url("/src/assets/bg/company.svg");
+}
+
+#credits {
+    background-image: url("/src/assets/bg/credits.svg");
+}

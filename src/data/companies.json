@@ -14,19 +14,19 @@
         "scenes": [
             {
                 "name": "logo",
-                "path": "/src/assets/apple/logo.glb",
+                "path": "/src/assets/3d/apple/logo.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             },
             {
                 "name": "iphone",
-                "path": "/src/assets/apple/iphone.glb",
+                "path": "/src/assets/3d/apple/iphone.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             },
             {
                 "name": "macbook",
-                "path": "/src/assets/apple/macbook.glb",
+                "path": "/src/assets/3d/apple/macbook.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             }
@@ -49,19 +49,19 @@
         "scenes": [
             {
                 "name": "logo",
-                "path": "/src/assets/microsoft/logo.glb",
+                "path": "/src/assets/3d/microsoft/logo.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             },
             {
                 "name": "office",
-                "path": "/src/assets/microsoft/office.glb",
+                "path": "/src/assets/3d/microsoft/office.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             },
             {
                 "name": "xbox",
-                "path": "/src/assets/microsoft/xbox.glb",
+                "path": "/src/assets/3d/microsoft/xbox.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             }
@@ -88,19 +88,19 @@
         "scenes": [
             {
                 "name": "logo",
-                "path": "/src/assets/amazon/logo.glb",
+                "path": "/src/assets/3d/amazon/logo.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             },
             {
                 "name": "alexa",
-                "path": "/src/assets/amazon/alexa.glb",
+                "path": "/src/assets/3d/amazon/alexa.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             },
             {
                 "name": "prime",
-                "path": "/src/assets/amazon/prime.glb",
+                "path": "/src/assets/3d/amazon/prime.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             }

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { CompanyType } from "../../types";
-import Company from "./Company";
 
 const Monopolies = ({ companies }: { companies: Array<CompanyType> }) => {
     return (

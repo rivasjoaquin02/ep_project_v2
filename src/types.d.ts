@@ -22,3 +22,9 @@ export interface CompanyType {
     avatar: string;
     colors: Array<string>;
 }
+
+export interface Person {
+    name: string;
+    role: string;
+    avatar: string;
+}
