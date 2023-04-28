@@ -1,5 +1,7 @@
-import { Link } from "react-router-dom";
 import { CompanyType } from "../../types";
+import MonopoliesCard from "./MonopoliesCard";
+import MonopoliesImage from "./MonopoliesImage";
+import MonopoliesInfo from "./MonopoliesInfo";
 
 const Monopolies = ({ companies }: { companies: Array<CompanyType> }) => {
     return (
@@ -9,32 +11,21 @@ const Monopolies = ({ companies }: { companies: Array<CompanyType> }) => {
         >
             <ul className="mx-auto grid h-full w-full max-w-screen-xl p-28 sm:grid-cols-1 sm:gap-y-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-20 lg:py-40">
                 {companies.map((company) => (
-                    <Link
-                        to={`/monopoly/${company.aka}`}
-                        className="m-auto flex h-96 w-64 flex-col overflow-hidden rounded-xl shadow-md hover:shadow-2xl"
-                    >
-                        <li key={company.aka} className="h-full">
-                            <div className="h-[80%] ">
-                                <img
-                                    src={company.avatar}
-                                    alt={`Logo de ${company.aka}`}
-                                    className="h-full"
-                                />
-                            </div>
-                            <div className="flex h-[20%] flex-col justify-center bg-gray-200 text-center">
-                                <h2 className="text-xl font-semibold">
-                                    {company.name}
-                                </h2>
-                                <p className="text-gray-500">
-                                    {company.website}
-                                </p>
-                            </div>
-                        </li>
-                    </Link>
+                    <Monopolies.Card aka={company.aka}>
+                        <Monopolies.Image avatar={company.aka} />
+                        <Monopolies.Info
+                            name={company.name}
+                            website={company.website}
+                        />
+                    </Monopolies.Card>
                 ))}
             </ul>
         </div>
     );
 };
+
+Monopolies.Card = MonopoliesCard;
+Monopolies.Image = MonopoliesImage;
+Monopolies.Info = MonopoliesInfo;
 
 export default Monopolies;

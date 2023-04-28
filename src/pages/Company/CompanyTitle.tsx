@@ -1,13 +1,11 @@
-import { ReactNode } from "react";
+import useCompanyContext from "../../context/CompanyContext";
 
-interface Props {
-    children: ReactNode;
-}
+const CompanyTitle = () => {
+    const { name } = useCompanyContext();
 
-const CompanyTitle = ({ children }: Props) => {
     return (
         <h1 className="border-b-2 border-gray-600 pb-3 text-4xl font-semibold">
-            {children}
+            {name}
         </h1>
     );
 };

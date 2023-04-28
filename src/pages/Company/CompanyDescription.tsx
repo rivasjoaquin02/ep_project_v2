@@ -1,11 +1,9 @@
-import { ReactNode } from "react";
+import useCompanyContext from "../../context/CompanyContext";
 
-interface Props {
-    children: ReactNode;
-}
+const CompanyDescription = () => {
+    const { description } = useCompanyContext();
 
-const CompanyDescription = ({ children }: Props) => {
-    return <p className="my-5 text-lg">{children}</p>;
+    return <p className="my-5 text-lg">{description}</p>;
 };
 
 export default CompanyDescription;

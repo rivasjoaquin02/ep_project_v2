@@ -1,5 +1,10 @@
 
-import { WEB_TITLE, ROUTES } from "./constants";
+const WEB_TITLE = "WebSite Title";
+export const ROUTES = [
+    { name: "Inicio", route: "/#home" },
+    { name: "Monopolios", route: "/#monopolies" },
+    { name: "Creditos", route: "/#credits" },
+];
 
 const NavBar = () => {
     return (

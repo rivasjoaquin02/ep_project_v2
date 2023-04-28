@@ -1,7 +1,8 @@
-import { Person } from "../../types";
 import PersonCard from "./PersonCard";
 
-const Credits = ({ persons }: { persons: Array<Person> }) => {
+import PERSONS from "../../data/credits.json";
+
+const Credits = () => {
     return (
         <div
             id="credits"
@@ -11,7 +12,7 @@ const Credits = ({ persons }: { persons: Array<Person> }) => {
                 Creditos a
             </h2>
             <ul className="grid md:grid-cols-3 xl:col-span-2">
-                {persons.map((person) => (
+                {PERSONS.map((person) => (
                     <li key={person.name}>
                         <PersonCard
                             img_src={person.avatar}
