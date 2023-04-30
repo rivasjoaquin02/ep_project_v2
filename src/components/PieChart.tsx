@@ -1,12 +1,12 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
-import { MetricsType } from "../types";
+import { PieMetrics } from "../types";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export interface Props {
     title?: string;
-    metrics: Array<MetricsType>;
+    metrics: Array<PieMetrics>;
 }
 
 export const PieChart = ({ title, metrics }: Props) => {
@@ -14,8 +14,8 @@ export const PieChart = ({ title, metrics }: Props) => {
         labels: metrics.map((product) => product.product),
         datasets: [
             {
-                label: "# Unidades Vendidas",
-                data: metrics.map((product) => product.units),
+                label: "% ventas ($B)",
+                data: metrics.map((product) => product.percent),
                 backgroundColor: [
                     "rgba(132, 0, 255, 0.3)",
                     "rgba(173, 204, 0, 0.3)",

@@ -5,35 +5,46 @@
         "aka": "apple",
         "description": "Apple Inc. es una empresa multinacional estadounidense de tecnología que diseña, desarrolla y vende productos electrónicos, software y servicios en línea.",
         "website": "https://www.apple.com",
-        "metrics": [
+        "pastel_metrics": [
             {
-                "product": "iPhone 14 Pro Max",
-                "units": 19500000,
-                "cost": 501,
-                "price": 1099,
+                "product": "IPhone",
+                "money": 202500000000,
+                "percent": 71.4,
                 "year": 2022
             },
             {
-                "product": "iPad (64gb)",
-                "units": 9750000,
-                "cost": 348,
-                "price": 700,
+                "product": "iPad",
+                "money": 29300000,
+                "percent": 0.04,
                 "year": 2022
             },
             {
-                "product": "MacBook Air",
-                "units": 10750000,
-                "cost": 718,
-                "price": 1099,
+                "product": "Mac's",
+                "money": 40000000000,
+                "percent": 14.1,
                 "year": 2022
             },
             {
-                "product": "AirPods",
-                "units": 6750000,
-                "cost": 59,
-                "price": 100,
+                "product": "Accesorios",
+                "money": 41000000000,
+                "percent": 14.46,
                 "year": 2022
             }
+        ],
+        "bar_metrics": [
+            { "year": 2010, "income": 14.01 },
+            { "year": 2011, "income": 25.92 },
+            { "year": 2012, "income": 41.66 },
+            { "year": 2013, "income": 37.04 },
+            { "year": 2014, "income": 39.5 },
+            { "year": 2015, "income": 53.4 },
+            { "year": 2016, "income": 45.69 },
+            { "year": 2017, "income": 48.35 },
+            { "year": 2018, "income": 59.53 },
+            { "year": 2019, "income": 55.26 },
+            { "year": 2020, "income": 57.41 },
+            { "year": 2021, "income": 94.68 },
+            { "year": 2022, "income": 99.8 }
         ],
         "assets": [
             {
@@ -63,36 +74,8 @@
         "aka": "microsoft",
         "description": "Microsoft Corporation es una empresa multinacional de tecnología de origen estadounidense que desarrolla, licencia y vende software, electrónica de consumo, hardware y servicios de computación en la nube.",
         "website": "https://www.microsoft.com",
-        "metrics": [
-            {
-                "product": "Azure",
-                "units": 1,
-                "cost": 1,
-                "price": 67630000000,
-                "year": 2022
-            },
-            {
-                "product": "Windows",
-                "units": 1,
-                "cost": 1,
-                "price": 24760000000,
-                "year": 2021
-            },
-            {
-                "product": "Office 365",
-                "units": 1,
-                "cost": 1,
-                "price": 44860000000,
-                "year": 2021
-            },
-            {
-                "product": "Gaming (Xbox)",
-                "units": 66000000,
-                "cost": 500,
-                "price": 16230000000,
-                "year": 2021
-            }
-        ],
+        "pastel_metrics": [],
+        "bar_metrics": [],
         "assets": [
             {
                 "name": "logo",
@@ -121,36 +104,8 @@
         "aka": "amazon",
         "description": "Amazon.com, Inc. es una empresa multinacional de tecnología de origen estadounidense que se enfoca en el comercio electrónico, la computación en la nube, la inteligencia artificial y la producción digital de contenido.",
         "website": "https://www.amazon.com",
-        "metrics": [
-            {
-                "product": "e-commerce",
-                "units": 3860000000,
-                "cost": 1,
-                "price": 1,
-                "year": 2021
-            },
-            {
-                "product": "AWS",
-                "units": 46000000,
-                "cost": 1,
-                "price": 1,
-                "year": 2021
-            },
-            {
-                "product": "Prime Video",
-                "units": 200000000,
-                "cost": 1,
-                "price": 6,
-                "year": 2021
-            },
-            {
-                "product": "Alexa",
-                "units": 500000000,
-                "cost": 1,
-                "price": 30,
-                "year": 2021
-            }
-        ],
+        "pastel_metrics": [],
+        "bar_metrics": [],
         "assets": [
             {
                 "name": "logo",

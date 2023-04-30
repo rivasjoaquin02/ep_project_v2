@@ -8,7 +8,7 @@ import {
     Legend,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
-import { MetricsType } from "../types";
+import { BarMetrics } from "../types";
 
 ChartJS.register(
     CategoryScale,
@@ -21,29 +21,21 @@ ChartJS.register(
 
 interface Props {
     title?: string;
-    metrics: Array<MetricsType>;
+    metrics: Array<BarMetrics>;
 }
 
 export const BarChart = ({ title, metrics }: Props) => {
-    const labels = metrics.map((product) => product.product);
+    const labels = metrics.map((product) => product.year);
 
     const data = {
         labels,
         datasets: [
             {
-                label: "Fabricacion",
-                data: metrics.map((product) => product.cost),
+                label: "Ingresos Totales ($B)",
+                data: metrics.map((product) => product.income),
                 backgroundColor: "rgba(132, 0, 255, 0.5)",
                 borderColor: "rgba(255, 255, 255, 1)",
                 // borderColor: "rgba(132, 0, 255, 1)",
-                borderWidth: 1,
-            },
-            {
-                label: "Venta",
-                data: metrics.map((product) => product.price),
-                backgroundColor: "rgba(173, 204, 0, 0.5)",
-                borderColor: "rgba(255, 255, 255, 1)",
-                // borderColor: "rgba(173, 204, 0, 1)",
                 borderWidth: 1,
             },
         ],

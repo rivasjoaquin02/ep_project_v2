@@ -1,12 +1,16 @@
-type MetricsType = {
+export type BarMetrics = {
+    year: number;
+    income: number;
+};
+
+export type PieMetrics = {
     product: string;
-    units: number;
-    cost: number;
-    price: number;
+    money: number;
+    percent: number;
     year: number;
 };
 
-export interface Asset3DType {
+interface Asset3DType {
     name: string;
     path: string;
     scale: { x: number; y: number; z: number };
@@ -20,7 +24,8 @@ export interface CompanyType {
     aka: string;
     description: string;
     website: string;
-    metrics: Array<MetricsType>;
+    pastel_metrics: Array<PieMetrics>;
+    bar_metrics: Array<BarMetrics>;
     assets: Array<Asset3DType>;
     avatar: string;
 }

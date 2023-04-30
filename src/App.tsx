@@ -38,7 +38,7 @@ const App = () => {
                                     <Company.BarGraph>
                                         <BarChart
                                             title="Plusvalia"
-                                            metrics={company.metrics}
+                                            metrics={company.bar_metrics}
                                         />
                                         <Company.Stock />
                                     </Company.BarGraph>
@@ -46,7 +46,7 @@ const App = () => {
                                     <Company.CakeGraph>
                                         <PieChart
                                             title="Principales Productos"
-                                            metrics={company.metrics}
+                                            metrics={company.pastel_metrics}
                                         />
                                     </Company.CakeGraph>
                                     {company.assets.map((asset) => (
