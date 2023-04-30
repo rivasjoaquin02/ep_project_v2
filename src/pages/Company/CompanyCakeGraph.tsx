@@ -1,7 +1,11 @@
-const CompanyCakeGraph = () => {
-    return (
-        <div className="row-start-2 bg-gray-500 p-10 ">GRAFICO DE PASTEL</div>
-    );
+import { ReactNode } from "react";
+
+interface Props {
+    children: ReactNode;
+}
+
+const CompanyCakeGraph = ({ children }: Props) => {
+    return <div className="row-start-2 p-5 ">{children}</div>;
 };
 
 export default CompanyCakeGraph;
