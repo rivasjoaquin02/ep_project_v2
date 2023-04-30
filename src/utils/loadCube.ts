@@ -1,15 +1,14 @@
-import * as THREE from "three";
-
+import { Scene, BoxGeometry, MeshBasicMaterial, Mesh } from "three";
 
 export const loadCube = (
-    scene: THREE.Scene,
+    scene: Scene,
     scale: { x: number; y: number; z: number },
     position: { x: number; y: number; z: number },
     modelName: string
 ) => {
-    const cubeGeo = new THREE.BoxGeometry(scale.x, scale.y, scale.z);
-    const cubeMat = new THREE.MeshBasicMaterial();
-    const cube = new THREE.Mesh(cubeGeo, cubeMat);
+    const cubeGeo = new BoxGeometry(scale.x, scale.y, scale.z);
+    const cubeMat = new MeshBasicMaterial();
+    const cube = new Mesh(cubeGeo, cubeMat);
 
     // set position, name
     cube.position.set(position.x, position.y, position.z);

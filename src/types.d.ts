@@ -26,8 +26,9 @@ export interface CompanyType {
 }
 
 // credits.json
-export interface Person {
+export interface PersonType {
     name: string;
     role: string;
     avatar: string;
+    social: string;
 }

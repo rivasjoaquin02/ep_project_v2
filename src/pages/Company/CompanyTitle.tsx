@@ -4,7 +4,7 @@ const CompanyTitle = () => {
     const { name } = useCompanyContext();
 
     return (
-        <h1 className="border-b-2 border-gray-600 pb-3 text-4xl font-bold">
+        <h1 className="border-b-2 pb-3 text-4xl font-bold text-gray-200">
             {name}
         </h1>
     );

@@ -10,14 +10,14 @@ import Footer from "./components/Footer";
 import COMPANIES from "./data/companies.json";
 import { BarChart } from "./components/BarChart";
 import { PieChart } from "./components/PieChart";
-import Asset3D from "./components/Asset3D";
-import Model from "./components/Model";
-import Scene from "./components/Scene";
 
-export default function App() {
+import Asset3D from "./components/3D/Asset3D";
+
+// TODO: feature for Dark Mode
+const App = () => {
     return (
         <Router>
-            <div>
+            <div className="bg-bg">
                 <NavBar />
                 <Home />
                 <Routes>
@@ -49,12 +49,6 @@ export default function App() {
                                             metrics={company.metrics}
                                         />
                                     </Company.CakeGraph>
-                                    {/* <Scene>
-                                        <Model
-                                            path="src/assets/3d/amazon/alexa.glb"
-                                            rotation={[0.3, Math.PI / 1.6, 0]}
-                                        />
-                                    </Scene> */}
                                     {company.assets.map((asset) => (
                                         <Asset3D asset={asset} />
                                     ))}
@@ -68,4 +62,6 @@ export default function App() {
             </div>
         </Router>
     );
-}
+};
+
+export default App;

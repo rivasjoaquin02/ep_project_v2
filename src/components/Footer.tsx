@@ -2,10 +2,10 @@ import { ROUTES } from "./NavBar";
 
 const Footer = () => {
     return (
-        <div className="bg-sky-200 ">
+        <div className="">
             <div
-                id="routes"
-                className="mx-auto max-w-screen-xl py-4 text-center"
+                id="footer"
+                className="mx-auto max-w-screen-xl py-4 text-center text-white"
             >
                 <ul className="flex w-full items-center justify-center gap-x-4">
                     {ROUTES.map((route) => (

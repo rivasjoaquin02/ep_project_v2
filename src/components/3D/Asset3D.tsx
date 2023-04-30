@@ -1,15 +1,17 @@
-import * as THREE from "three";
+import { Object3D } from "three";
 import { useEffect, useRef } from "react";
-import { Asset3DType } from "../types";
-import { createScene } from "../utils/createScene";
-import { loadModel } from "../utils/loadModel";
-import { helpers } from "../utils/helpers";
+import { Asset3DType } from "../../types";
+import { createScene } from "../../utils/createScene";
+import { loadModel } from "../../utils/loadModel";
+import { helpers } from "../../utils/helpers";
 
 const Asset3D = ({ asset }: { asset: Asset3DType }) => {
     const mountRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const currentRef = mountRef.current;
+
+        if (!currentRef) throw new Error("error with currentRef");
         let { clientWidth: width, clientHeight: height } = currentRef;
 
         /* 🌆 scene, 📷 camera, ✒️ renderer */
@@ -22,7 +24,7 @@ const Asset3D = ({ asset }: { asset: Asset3DType }) => {
         currentRef?.appendChild(renderer.domElement);
 
         /* Load Models */
-        const obj = new THREE.Object3D();
+        const obj = new Object3D();
         scene.add(obj);
 
         loadModel(obj, asset.path, asset.scale, asset.position, asset.name);

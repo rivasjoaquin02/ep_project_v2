@@ -1,11 +1,11 @@
-import * as THREE from "three";
+import { Scene, PerspectiveCamera, WebGLRenderer } from "three";
 
 export const createScene = (
     sizes: { width: number; height: number },
     cameraPosition: { x?: number; y?: number; z?: number } = {}
 ) => {
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(
+    const scene = new Scene();
+    const camera = new PerspectiveCamera(
         75,
         sizes.width / sizes.height,
         0.1,
@@ -19,7 +19,7 @@ export const createScene = (
     );
     scene.add(camera);
 
-    const renderer = new THREE.WebGLRenderer({
+    const renderer = new WebGLRenderer({
         antialias: true,
         alpha: true,
     });

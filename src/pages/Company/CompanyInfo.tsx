@@ -6,7 +6,10 @@ interface Props {
 
 const CompanyInfo = ({ children }: Props) => {
     return (
-        <div className="flex flex-col gap-5 p-5">
+        <div
+            id="company-info"
+            className="flex flex-col gap-5 p-5 transition duration-500 ease-in "
+        >
             {children}
         </div>
     );

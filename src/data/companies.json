@@ -38,24 +38,24 @@
         "assets": [
             {
                 "name": "logo",
-                "path": "/src/assets/3d/apple/logo.glb",
+                "path": "/src/assets/models/apple/logo.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             },
             {
                 "name": "iphone",
-                "path": "/src/assets/3d/apple/iphone.glb",
+                "path": "/src/assets/models/apple/iphone.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             },
             {
                 "name": "macbook",
-                "path": "/src/assets/3d/apple/macbook.glb",
+                "path": "/src/assets/models/apple/macbook.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             }
         ],
-        "avatar": "/src/assets/avatars/apple.svg"
+        "avatar": "/src/assets/avatars/avatar_apple.png"
     },
     {
         "id": 2,
@@ -65,55 +65,55 @@
         "website": "https://www.microsoft.com",
         "metrics": [
             {
-                "product": "Windows 11",
-                "units": 1100000000,
+                "product": "Azure",
+                "units": 1,
                 "cost": 1,
-                "price": 80,
+                "price": 67630000000,
+                "year": 2022
+            },
+            {
+                "product": "Windows",
+                "units": 1,
+                "cost": 1,
+                "price": 24760000000,
                 "year": 2021
             },
             {
                 "product": "Office 365",
-                "units": 200000000,
+                "units": 1,
                 "cost": 1,
-                "price": 60,
+                "price": 44860000000,
                 "year": 2021
             },
             {
-                "product": "Xbox Series X",
+                "product": "Gaming (Xbox)",
                 "units": 66000000,
                 "cost": 500,
-                "price": 500,
-                "year": 2021
-            },
-            {
-                "product": "Azure",
-                "units": 2000000,
-                "cost": 1,
-                "price": 1,
+                "price": 16230000000,
                 "year": 2021
             }
         ],
         "assets": [
             {
                 "name": "logo",
-                "path": "/src/assets/3d/microsoft/logo.glb",
+                "path": "/src/assets/models/microsoft/logo.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             },
             {
                 "name": "office",
-                "path": "/src/assets/3d/microsoft/office.glb",
+                "path": "/src/assets/models/microsoft/office.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             },
             {
                 "name": "xbox",
-                "path": "/src/assets/3d/microsoft/xbox.glb",
+                "path": "/src/assets/models/microsoft/xbox.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             }
         ],
-        "avatar": "/src/assets/avatar/microsoft.svg"
+        "avatar": "/src/assets/avatars/avatar_microsoft.png"
     },
     {
         "id": 3,
@@ -154,23 +154,23 @@
         "assets": [
             {
                 "name": "logo",
-                "path": "/src/assets/3d/amazon/logo.glb",
+                "path": "/src/assets/models/amazon/logo.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             },
             {
                 "name": "alexa",
-                "path": "/src/assets/3d/amazon/alexa.glb",
+                "path": "/src/assets/models/amazon/alexa.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             },
             {
                 "name": "prime",
-                "path": "/src/assets/3d/amazon/prime.glb",
+                "path": "/src/assets/models/amazon/prime.glb",
                 "scale": { "x": 1, "y": 1, "z": 1 },
                 "position": { "x": 0, "y": 0, "z": 0 }
             }
         ],
-        "avatar": "/src/assets/avatar/amazon.svg"
+        "avatar": "/src/assets/avatars/avatar_amazon.png"
     }
 ]

@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#home {
-    background-image: url("/src/assets/bg/home.png");
-}
-
-#monopolies {
-    background-image: url("/src/assets/bg/monopolies.svg");
-}
-
-#company {
-    background-image: url("/src/assets/bg/company.svg");
-}
-
-#credits {
-    background-image: url("/src/assets/bg/credits.svg");
+.mica {
+    @apply bg-transparent bg-opacity-50 backdrop-blur-lg;
 }
