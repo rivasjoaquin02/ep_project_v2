@@ -1,16 +1,19 @@
 type MetricsType = {
     product: string;
     units: number;
+    cost: number;
+    price: number;
     year: number;
 };
 
-export interface SceneType {
+export interface Asset3DType {
     name: string;
     path: string;
     scale: { x: number; y: number; z: number };
     position: { x: number; y: number; z: number };
 }
 
+// companies.json
 export interface CompanyType {
     id: number;
     name: string;
@@ -18,11 +21,11 @@ export interface CompanyType {
     description: string;
     website: string;
     metrics: Array<MetricsType>;
-    scenes: Array<SceneType>;
+    assets: Array<Asset3DType>;
     avatar: string;
-    colors: Array<string>;
 }
 
+// credits.json
 export interface Person {
     name: string;
     role: string;

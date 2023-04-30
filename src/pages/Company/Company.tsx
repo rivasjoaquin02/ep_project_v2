@@ -7,6 +7,7 @@ import CompanyBarGraph from "./CompanyBarGraph";
 import CompanyCakeGraph from "./CompanyCakeGraph";
 import CompanyTitle from "./CompanyTitle";
 import CompanyDescription from "./CompanyDescription";
+import CompanyStock from "./CompanyStock";
 
 interface Props {
     company: CompanyType;
@@ -32,6 +33,7 @@ Company.Info = CompanyInfo;
 Company.Title = CompanyTitle;
 Company.Description = CompanyDescription;
 Company.BarGraph = CompanyBarGraph;
+Company.Stock = CompanyStock;
 Company.CakeGraph = CompanyCakeGraph;
 
 export default Company;

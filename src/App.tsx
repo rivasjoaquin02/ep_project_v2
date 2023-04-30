@@ -7,9 +7,12 @@ import Company from "./pages/Company/Company";
 import Credits from "./pages/Credits/Credits";
 import Footer from "./components/Footer";
 
-import Asset3D from "./components/Asset3D";
-
 import COMPANIES from "./data/companies.json";
+import { BarChart } from "./components/BarChart";
+import { PieChart } from "./components/PieChart";
+import Asset3D from "./components/Asset3D";
+import Model from "./components/Model";
+import Scene from "./components/Scene";
 
 export default function App() {
     return (
@@ -27,13 +30,32 @@ export default function App() {
                             path={`/monopoly/${company.aka}`}
                             element={
                                 <Company company={company}>
-                                    <Company.BarGraph />
                                     <Company.Info>
                                         <Company.Title />
                                         <Company.Description />
                                     </Company.Info>
-                                    <Company.CakeGraph />
-                                    {company.scenes.map((asset) => (
+
+                                    <Company.BarGraph>
+                                        <BarChart
+                                            title="Plusvalia"
+                                            metrics={company.metrics}
+                                        />
+                                        <Company.Stock />
+                                    </Company.BarGraph>
+
+                                    <Company.CakeGraph>
+                                        <PieChart
+                                            title="Principales Productos"
+                                            metrics={company.metrics}
+                                        />
+                                    </Company.CakeGraph>
+                                    {/* <Scene>
+                                        <Model
+                                            path="src/assets/3d/amazon/alexa.glb"
+                                            rotation={[0.3, Math.PI / 1.6, 0]}
+                                        />
+                                    </Scene> */}
+                                    {company.assets.map((asset) => (
                                         <Asset3D asset={asset} />
                                     ))}
                                 </Company>

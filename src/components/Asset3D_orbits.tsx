@@ -1,10 +1,10 @@
 import * as THREE from "three";
 import { useEffect, useRef } from "react";
-import { SceneType } from "../types";
+import { Asset3DType } from "../types";
 import { createScene } from "../utils/createScene";
 import { loadModel } from "../utils/loadModel";
 
-const Asset3D = ({ scenes }: { scenes: Array<SceneType> }) => {
+const Asset3D = ({ scenes }: { scenes: Array<Asset3DType> }) => {
     const mountRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {

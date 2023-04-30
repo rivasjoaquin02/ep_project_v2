@@ -6,12 +6,36 @@
         "description": "Apple Inc. es una empresa multinacional estadounidense de tecnología que diseña, desarrolla y vende productos electrónicos, software y servicios en línea.",
         "website": "https://www.apple.com",
         "metrics": [
-            { "product": "iphone", "units": 19500000, "year": 2022 },
-            { "product": "ipad", "units": 9750000, "year": 2022 },
-            { "product": "mac", "units": 10750000, "year": 2022 },
-            { "product": "accesorios", "units": 6750000, "year": 2022 }
+            {
+                "product": "iPhone 14 Pro Max",
+                "units": 19500000,
+                "cost": 501,
+                "price": 1099,
+                "year": 2022
+            },
+            {
+                "product": "iPad (64gb)",
+                "units": 9750000,
+                "cost": 348,
+                "price": 700,
+                "year": 2022
+            },
+            {
+                "product": "MacBook Air",
+                "units": 10750000,
+                "cost": 718,
+                "price": 1099,
+                "year": 2022
+            },
+            {
+                "product": "AirPods",
+                "units": 6750000,
+                "cost": 59,
+                "price": 100,
+                "year": 2022
+            }
         ],
-        "scenes": [
+        "assets": [
             {
                 "name": "logo",
                 "path": "/src/assets/3d/apple/logo.glb",
@@ -31,8 +55,7 @@
                 "position": { "x": 0, "y": 0, "z": 0 }
             }
         ],
-        "avatar": "/src/assets/required/apple/logo.jpeg",
-        "colors": ["bg-green-500", "bg-yellow-400", "bg-red-500", "bg-blue-400"]
+        "avatar": "/src/assets/avatars/apple.svg"
     },
     {
         "id": 2,
@@ -41,12 +64,36 @@
         "description": "Microsoft Corporation es una empresa multinacional de tecnología de origen estadounidense que desarrolla, licencia y vende software, electrónica de consumo, hardware y servicios de computación en la nube.",
         "website": "https://www.microsoft.com",
         "metrics": [
-            { "product": "Windows", "units": 1100000000, "year": 2021 },
-            { "product": "Office", "units": 200000000, "year": 2021 },
-            { "product": "Xbox", "units": 66000000, "year": 2021 },
-            { "product": "Azure", "units": 2000000, "year": 2021 }
+            {
+                "product": "Windows 11",
+                "units": 1100000000,
+                "cost": 1,
+                "price": 80,
+                "year": 2021
+            },
+            {
+                "product": "Office 365",
+                "units": 200000000,
+                "cost": 1,
+                "price": 60,
+                "year": 2021
+            },
+            {
+                "product": "Xbox Series X",
+                "units": 66000000,
+                "cost": 500,
+                "price": 500,
+                "year": 2021
+            },
+            {
+                "product": "Azure",
+                "units": 2000000,
+                "cost": 1,
+                "price": 1,
+                "year": 2021
+            }
         ],
-        "scenes": [
+        "assets": [
             {
                 "name": "logo",
                 "path": "/src/assets/3d/microsoft/logo.glb",
@@ -66,26 +113,45 @@
                 "position": { "x": 0, "y": 0, "z": 0 }
             }
         ],
-        "avatar": "/src/assets/required/microsoft/logo.jpeg",
-        "colors": ["bg-green-500", "bg-yellow-400", "bg-red-500", "bg-blue-400"]
+        "avatar": "/src/assets/avatar/microsoft.svg"
     },
     {
         "id": 3,
-        "name": "Amazon.com, Inc.",
-        "aka": "Amazon",
+        "name": "Amazon Inc.",
+        "aka": "amazon",
         "description": "Amazon.com, Inc. es una empresa multinacional de tecnología de origen estadounidense que se enfoca en el comercio electrónico, la computación en la nube, la inteligencia artificial y la producción digital de contenido.",
         "website": "https://www.amazon.com",
         "metrics": [
-            { "product": "e-commerce", "units": 38600000000, "year": 2021 },
             {
-                "product": "Amazon Web Services",
-                "units": 46000000,
+                "product": "e-commerce",
+                "units": 3860000000,
+                "cost": 1,
+                "price": 1,
                 "year": 2021
             },
-            { "product": "Prime Video", "units": 200000000, "year": 2021 },
-            { "product": "Alexa", "units": 500000000, "year": 2021 }
+            {
+                "product": "AWS",
+                "units": 46000000,
+                "cost": 1,
+                "price": 1,
+                "year": 2021
+            },
+            {
+                "product": "Prime Video",
+                "units": 200000000,
+                "cost": 1,
+                "price": 6,
+                "year": 2021
+            },
+            {
+                "product": "Alexa",
+                "units": 500000000,
+                "cost": 1,
+                "price": 30,
+                "year": 2021
+            }
         ],
-        "scenes": [
+        "assets": [
             {
                 "name": "logo",
                 "path": "/src/assets/3d/amazon/logo.glb",
@@ -105,7 +171,6 @@
                 "position": { "x": 0, "y": 0, "z": 0 }
             }
         ],
-        "avatar": "/src/assets/required/amazon/logo.jpeg",
-        "colors": ["bg-green-500", "bg-yellow-400", "bg-red-500", "bg-blue-400"]
+        "avatar": "/src/assets/avatar/amazon.svg"
     }
 ]
