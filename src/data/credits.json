@@ -2,19 +2,19 @@
     {
         "name": "Joaquin Rivas",
         "role": "Web Dev",
-        "avatar": "src/assets/avatars/avatar_default.png",
+        "avatar": "/src/assets/avatars/avatar_default.png",
         "social": "https://www.linkedin.com/in/strangedev/"
     },
     {
         "name": "Naylin Brizuela",
         "role": "Designer, UI/UX",
-        "avatar": "src/assets/avatars/avatar_default.png",
+        "avatar": "/src/assets/avatars/avatar_default.png",
         "social": "https://www.linkedin.com/in/naylin-brizuela/"
     },
     {
         "name": "Juan Diego",
         "role": "3d Artist",
-        "avatar": "src/assets/avatars/avatar_default.png",
+        "avatar": "/src/assets/avatars/avatar_default.png",
         "social": ""
     }
 ]

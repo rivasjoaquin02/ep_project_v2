@@ -27,9 +27,10 @@ const App = () => {
                     />
                     {COMPANIES.map((company) => (
                         <Route
+                            key={company.aka}
                             path={`/monopoly/${company.aka}`}
                             element={
-                                <Company company={company}>
+                                <Company key={company.aka} company={company}>
                                     <Company.Info>
                                         <Company.Title />
                                         <Company.Description />
@@ -50,7 +51,10 @@ const App = () => {
                                         />
                                     </Company.CakeGraph>
                                     {company.assets.map((asset) => (
-                                        <Asset3D asset={asset} />
+                                        <Asset3D
+                                            key={asset.name}
+                                            asset={asset}
+                                        />
                                     ))}
                                 </Company>
                             }
